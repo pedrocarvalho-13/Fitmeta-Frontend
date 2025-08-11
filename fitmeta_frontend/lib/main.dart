@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart'; // Importe o pacote
+ // Sua classe principal do app
 
-void main() {
+Future<void> main() async {
+    // Garante que o Flutter está inicializado
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Carrega o arquivo .env
+  await dotenv.load(fileName: ".env");
   runApp(const MainApp());
 }
 
