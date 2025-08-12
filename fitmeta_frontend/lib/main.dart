@@ -1,3 +1,4 @@
+import 'package:fitmeta_frontend/views/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart'; // Importe o pacote
  // Sua classe principal do app
@@ -19,7 +20,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: LoginScreen(),
         ),
       ),
     );
